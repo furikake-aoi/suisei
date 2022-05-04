@@ -1,0 +1,108 @@
+header{
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 0rem;
+    height: 0rem;
+}
+header > div{
+    display: block;
+    margin: 0;
+    width: auto;
+    max-width: auto;
+    justify-content: start;
+}
+header .logo img{
+    margin-top: 0;
+    transform: none;
+    height: auto;
+}
+header ul{
+    display: block;
+    transform: none;
+    margin-top: 0;
+}
+header li{
+    margin-left: 0;
+}
+header .dl img{
+    position: relative;
+    transform: none;
+    top: 0;
+    height: auto;
+    width: auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .dl{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+}
+header .dl img{
+    height: 2rem;
+    width: 2rem;
+}
+header .logo img{
+    max-width: 80vw;
+    width: 15rem;
+}
+header .hb{
+    position: absolute;
+    bottom: 3rem;
+}
+header .hb ul{
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 0%;
+    margin-bottom: 2rem;
+}
+header .hb li{
+    margin-right: 1rem;
+}
+header .scroll{
+    text-align: center;
+}
+
+
+#project > div{
+    display: -webkit-flex;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 1rem;
+}
+#project > div > a{
+    display: block;
+}
+#project section{
+    border: 1px solid #aaa;
+    width: 12rem;
+    margin-right: 1.5rem;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+}
+#project{
+    margin-bottom: 1rem;
+}
+
+.dark #project section{
+    border: 1px solid #555;
+}
+
+@media screen and (max-width:480px){
+    #project > div{
+        display: block;
+    }
+    #project a{
+        width: calc(100% - 2rem);
+    }
+    #project section{
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+#news > div{
+    overflow-x: scroll;
+}
+#news li{
+    margin-top: 0.2rem;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+}
+#news li span{
+    margin-right: 1rem;
+    color: #111;
+}
+
+.dark #news li{
+    border-bottom: 1px solid #555;
+}
+.dark #news li span{
+    color: #eee;
+}
+
+@media screen and (max-width:480px){
+    #news li span{
+        color: #aaa;
+    }
+    #news li span:last-child{
+        color: #111;
+    }
+    .dark #news li span{
+        color: #555;
+    }
+    .dark #news li span:last-child{
+        color: #eee;
+    }
+}
+
+#news li:last-child{
+    border-bottom: 1px solid transparent;
+}
