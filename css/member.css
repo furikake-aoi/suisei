@@ -1,0 +1,30 @@
+.member > div{
+    display: -webkit-flex;
+    display: flex;
+}
+.one{
+    border: 1px solid #aaa;
+    width: 41%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 2%;
+}
+.one img{
+    display: block;
+    margin-right: 1rem;
+    width: 3rem;
+}
+.one > div{
+    display: -webkit-flex;
+    display: flex;
+}
+
+.dark .one{
+    border: 1px solod #555;
+}
+
+@media screen and (max-width:480px){
+    .one{
+        width: 96%;
+    }
+}

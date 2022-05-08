@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" id="html" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ライセンスをご覧いただけます。">
+    <meta name="description" content="suiseiのプロジェクトをご覧いただけます。">
     <link rel="shortcut icon" href="/img/icon.png">
     <link rel="apple-touch-icon" href="/img/icon.png">
     <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <noscript><link rel="stylesheet" type="text/css" href="/css/noscript.css"></noscript>
-    <title>サポート - suisei</title>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="/css/noscript.css">
+    </noscript>
+    <title>Project - suisei</title>
 </head>
-<html>
-<div id="b">
+<body>
 <header>
-    <div id="logo">
-        <h1><a href="/">suisei</a></h1>
-    </div>
-    <div id="h-m">
-    <ul>
-        <li><a href="/">ホーム</a></li>
-        <li><a href="/about-us.html">私たちについて</a></li>
-        <li><a href="/project/">プロジェクト</a></li>
-        <li><a href="/community.html">コミュニティ</a></li>
-        <li><a href="/support.html">サポート</a></li>
-    </ul>
+    <div>
+        <div class="logo">
+            <a href="/">
+                <img class="light-img" alt="suisei logo" src="/img/logo.svg">
+                <img class="dark-img" alt="suisei logo" src="/img/logo-d.svg">
+            </a>
+        </div>
+        <ul>
+            <li><a href="/member.html">Member</a></li>
+            <li><a href="/project/">Project</a></li>
+            <!--<li><a href="">Blog</a></li>-->
+            <li><a href="/contact.html">Contact</a></li>
+            <li class="ns"><div class="dl"><input type="checkbox" id="dls" onchange="switchmode()"><label for="dls"><img class="light-img" alt="dark mode" src="/img/light.svg"><img class="dark-img" alt="light mode" src="/img/dark.svg"></label></div></li>
+        </ul>
     </div>
 </header>
 <main>
-          <div class="sec" id="use">
+          <div id="use">
               <h2>使用について</h2>
               <p>守ってほしいこと</P>
               <ul class="a">
@@ -37,18 +41,17 @@
                   <li>・以上からダウンロードできるデータは、営利目的、非営利目的、配布形態を問わず連絡なしで利用できます。ただし、ファイルのコピーを有償配布する場合はお問い合わせください。また、製作者に個別の利用承諾を受けたい場合もお問い合わせください。</li>
               </ul>
           </div>
-          <div class="sec" id="pp">
+          <div id="pp">
               <h2>プライバシーポリシー</h2>
-              <p>個人情報の取り扱い</p>
               <ul>
-                  <li class="a">
+                  <li>
                       <h3>個人情報の利用目的</h3>
                       <ul>
                           <li>当サイトでは、お問い合わせの際、名前やメールアドレス等の個人情報を入力いただく場合がございます。</li>
                           <li>取得した個人情報は、お問い合わせに対する回答や必要な情報を電子メールなどでご連絡する場合に利用させていただくものであり、これらの目的以外では利用いたしません。</li>
                       </ul>
                   </li>
-                  <li class="a">
+                  <li>
                       <h3>免責事項</h3>
                       <ul>
                           <li>当方が管理しているアカウント及びウェブサイト以外から提供される情報、サービス等について一切の責任を負いません。</li>
@@ -56,7 +59,7 @@
                           <li>当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。</li>
                       </ul>
                   </li>
-                  <li class="a">
+                  <li>
                       <h3>肖像権・著作権について</h3>
                       <ul>
                           <li>当サイトは著作権や肖像権の侵害を目的としたものではありません。著作権や肖像権に関して問題がございましたら、お問い合わせください。迅速に対応いたします。</li>
@@ -64,27 +67,44 @@
                   </li>
               </ul>
           </div>
-          <div class="sec" id="caution">
+          <div id="plus">
               <h2>補足</h2>
-              <p>さいごに</p>
-              <ul class="a">
-                  <li>各サービス及び制作物ごとの細則がこれより優先されるものとします。</li>
-                  <li>これらは、予告なしに変更されることをご留意ください。</li>
+              <ul>
+                  <li>各サービス及び制作物ごとの細則がこれより優先されます。</li>
+                  <li>当ページの利用者は、予告なしに変更されることに同意します。</li>
               <ul>
           </div>
-    <input type="button" id="back" onclick="window.history.back();" value="&lt;&lt; 戻る">
 </main>
 <footer>
-    <div id="f-m">
-    <ul>
-        <li><a href="/news/">ニュース</a></li>
-        <li><a href="/license.html">ライセンス</a></li>
-        <li><a href="/sitemap.html">サイトマップ</a></li>
-        <li><a href="/system.html">システム概要</a></li>
-        <li><a href="/contact.html">お問い合わせ</a></li>
-    </ul>
+    <div>
+        <p class="cp to-top">
+            <a href="#">&#8743; to top</a>
+        </p>
+        <div class="foo">
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/member.html">メンバー一覧</a></li>
+                <li><a href="/project/">プロジェクト</a></li>
+                <li><a href="/news/">ニュース</a></li>
+                <li><a href="/license.html">ライセンス</a></li>
+                <li><a href="/contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div class="pc foo foo-r">
+            <div>
+                <p>
+                    <a href="#">&#8743; to top</a>
+                </p>
+                <a href="/">
+                    <img class="light-img" alt="suisei logo" src="/img/logo.svg">
+                    <img class="dark-img" alt="suisei logo" src="/img/logo-d.svg">
+                </a>
+                <p class="copyright">&copy; 2022 suisei</p>
+            </div>
+        </div>
+        <p class="cp copyright">&copy; 2022 suisei</p>
     </div>
-    <small id="copyright">&copy; 2022 suisei</small>
 </footer>
-</div>
+<script type="text/javascript" src="/js/dark-light.js"></script>
+</body>
 </html>

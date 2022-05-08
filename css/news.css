@@ -10,6 +10,28 @@
     margin-right: 1rem;
     color: #111;
 }
+#news .kind{
+    display: inline-block;
+    width: 7rem;
+    text-align: center;
+}
+.kiji h2 + p{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color: #aaa;
+}
+.news-menuber{
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.news-menuber div{
+    margin-bottom: 1rem;
+}
+.news-menuber div:last-child > span:last-child{
+    margin-left: 1rem;
+}
 
 .dark #news li{
     border-bottom: 1px solid #555;

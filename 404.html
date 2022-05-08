@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="ja" id="html" class="light">
 <head>
+    <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="suiseiに所属するメンバーの一覧です。">
+    <meta name="description" content="suiseiの公式ウェブサイトです。">
     <link rel="shortcut icon" href="/img/icon.png">
     <link rel="apple-touch-icon" href="/img/icon.png">
     <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/css/member.css">
+    <style>
+        .message{
+            display: -webkit-flex;
+            display: flex;
+            height: calc(100vh - 3rem);
+            justify-content: center;
+            align-items: center;
+        }
+        .top-message{
+            display: -webkit-flex;
+            display: flex;
+        }
+        .top-error-code{
+            font-size: 2rem;
+            border-right: 1px solid #aaa;
+            padding: 2rem;
+        }
+        .top-error-message{
+            margin: auto;
+            margin-left: 2rem;
+        }
+
+        .dark .top-error-code{
+            border-right: 1px solid #555;
+        }
+
+        @media screen and (max-width:480px){
+            .top-message{
+                display: inline-block;
+            }
+            .top-error-code{
+                border-right: none;
+                margin-bottom: 1rem;
+                padding: 0;
+            }
+            .top-error-message{
+                margin-left: 0;
+            }
+        }
+    </style>
     <noscript>
         <link rel="stylesheet" type="text/css" href="/css/noscript.css">
     </noscript>
@@ -33,22 +73,14 @@
     </div>
 </header>
 <main>
-    <div id="member-list">
-        <h2>Menber list</h2>
-        <div>
-            <section class="one">
-                <h3>frikake</h3>
-                <div>
-                <img src="/img/icon/furikake.png">
-                <div>
-                    <p>#01</p>
-                    <ul>
-                        <li><a href="https://furikake.f5.si">HP</a></li>
-                    </ul>
-                </div>
-                </div>
-            </section>
+    <div class="message">
+        <div class="top-message">
+            <div class="top-error-code">404</div>
+            <div class="top-error-message">ページ<span class="pc">またはディレクトリ</span>が見つかりませんでした。</div>
         </div>
+    </div>
+    <div class="sub-message">
+        <p>リンク切れ等がありましたら、 <a class="u" href="/contact.html">お問い合わせ</a> より、連絡いただけると幸いです。</p>
     </div>
 </main>
 <footer>

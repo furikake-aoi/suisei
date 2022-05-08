@@ -6,7 +6,6 @@ body,div,nav,button,header,footer,p,span,h1,h2,h3,h4,h5,a,li,ul,table,th,td,tr{
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 1rem;
     text-decoration: none;
     color: #333;
 }
@@ -38,7 +37,7 @@ body,div,nav,button,header,footer,p,span,h1,h2,h3,h4,h5,a,li,ul,table,th,td,tr{
 
 /* base */
 .pc{
-    display: block;
+    display: inline-block;
 }
 .cp{
     display: none;
@@ -47,8 +46,15 @@ main{
     margin: 0 auto;
     width: calc(100% - 2rem);
     max-width: 1200px;
+    min-height: calc(100vh - 5rem - 18.5rem);
 }
 
+.c{
+    text-align: center;
+}
+a.u{
+    text-decoration: dashed underline;
+}
 a{
     opacity: 1;
     transition: all 0.3s;
@@ -86,7 +92,7 @@ main > div{
     padding: 0.7rem;
     margin-bottom: 1rem;
     margin-right: 1.5rem;
-    width: 12rem;
+    width: 13rem;
     max-width: 100%;
     text-align: center;
     background-color: #bbb;
@@ -142,6 +148,9 @@ header ul{
 header li{
     margin-left: 1rem;
 }
+header .dl{
+    margin-right: 1rem;
+}
 header .dl img{
     position: absolute;
     transform: translateY(-50%);
@@ -154,6 +163,7 @@ footer{
     margin-top: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    height: 11.5rem;
     background-color: #ddd;
 }
 footer > div{
@@ -164,10 +174,13 @@ footer > div{
     max-width: 1200px;
 }
 .foo{
-    width: 33%;
+    width: 50%;
 }
 .foo li{
     margin-bottom: 0.5rem;
+}
+.foo-l{
+    text-align: center;
 }
 .foo-r{
     display: flex;
@@ -236,13 +249,22 @@ footer > div{
         display: none;
     }
     .cp{
-        display: block;
+        display: inline-block;
     }
 
     .b{
         width: calc(100% - 2rem)
     }
 
+    main{
+        min-height: calc(100vh - 5rem - 25rem);
+    }
+    footer{
+        height: 18rem;
+    }
+    .foo-l{
+        text-align: left;
+    }
     .to-top{
         text-align: center;
         margin-bottom: 2rem;

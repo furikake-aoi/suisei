@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" id="html" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,46 +8,72 @@
     <link rel="shortcut icon" href="/img/icon.png">
     <link rel="apple-touch-icon" href="/img/icon.png">
     <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <noscript><link rel="stylesheet" type="text/css" href="/css/noscript.css"></noscript>
-    <title>ニュース一覧 - suisei</title>
+    <link rel="stylesheet" type="text/css" href="/css/news.css">
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="/css/noscript.css">
+    </noscript>
+    <title>ウェブサイト公開 - suisei</title>
 </head>
-<html>
-<div id="b">
+<body>
 <header>
-    <div id="logo">
-        <h1><a href="/">suisei</a></h1>
-    </div>
-    <div id="h-m">
-    <ul>
-        <li><a href="/">ホーム</a></li>
-        <li><a href="/about-us.html">私たちについて</a></li>
-        <li><a href="/project/">プロジェクト</a></li>
-        <li><a href="/community.html">コミュニティ</a></li>
-        <li><a href="/support.html">サポート</a></li>
-    </ul>
+    <div>
+        <div class="logo">
+            <a href="/">
+                <img class="light-img" alt="suisei logo" src="/img/logo.svg">
+                <img class="dark-img" alt="suisei logo" src="/img/logo-d.svg">
+            </a>
+        </div>
+        <ul>
+            <li><a href="/member.html">Member</a></li>
+            <li><a href="/project/">Project</a></li>
+            <!--<li><a href="">Blog</a></li>-->
+            <li><a href="/contact.html">Contact</a></li>
+            <li class="ns"><div class="dl"><input type="checkbox" id="dls" onchange="switchmode()"><label for="dls"><img class="light-img" alt="dark mode" src="/img/light.svg"><img class="dark-img" alt="light mode" src="/img/dark.svg"></label></div></li>
+        </ul>
     </div>
 </header>
 <main>
-    <div class="sec" id="news">
-        <h2><a href="/news/">News</a></h2>
-        <p>お知らせ、更新情報、不具合情報</p>
-        <ul class="s">
-            <li><a href="/news/2022-04-23.html">2022/04/23 ウェブページ公開</a></li>
-            <!--<li><a href="/news/">see more</a></li>-->
-        </ul>
+    <div id="news">
+        <h2>News</h2>
+        <p class="year"><a href="#2022">2022</a></p>
+        <div>
+            <ul id="2022">
+                <li><a href="/news/2022-05-04-01.html"><span>2022/20/20</span><span class="kind">ウェブサイト</span><br class="cp"><span>ウェブサイト公開</span></a></li>
+            </ul>
+        </div>
     </div>
 </main>
 <footer>
-    <div id="f-m">
-    <ul>
-        <li><a href="/news/">ニュース</a></li>
-        <li><a href="/license.html">ライセンス</a></li>
-        <li><a href="/sitemap.html">サイトマップ</a></li>
-        <li><a href="/system.html">システム概要</a></li>
-        <li><a href="/contact.html">お問い合わせ</a></li>
-    </ul>
+    <div>
+        <p class="cp to-top">
+            <a href="#">&#8743; to top</a>
+        </p>
+        <div class="foo foo-l">
+            <ul>
+                <li><a href="/">ホーム</a></li>
+                <li><a href="/member.html">メンバー一覧</a></li>
+                <li><a href="/project/">プロジェクト</a></li>
+                <li><a href="/news/">ニュース</a></li>
+                <li><a href="/license.html">ライセンス</a></li>
+                <li><a href="/contact.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div class="pc foo foo-r">
+            <div>
+                <p>
+                    <a href="#">&#8743; to top</a>
+                </p>
+                <a href="/">
+                    <img class="light-img" alt="suisei logo" src="/img/logo.svg">
+                    <img class="dark-img" alt="suisei logo" src="/img/logo-d.svg">
+                </a>
+                <p class="copyright">&copy; 2022 suisei</p>
+            </div>
+        </div>
+        <p class="cp copyright">&copy; 2022 suisei</p>
     </div>
-    <small id="copyright">&copy; 2022 suisei</small>
 </footer>
-</div>
+<script type="text/javascript" src="/js/news-share.js"></script>
+<script type="text/javascript" src="/js/dark-light.js"></script>
+</body>
 </html>

@@ -11,13 +11,13 @@
     <link rel="stylesheet" type="text/css" href="/css/top.css">
     <link rel="stylesheet" type="text/css" href="/css/news.css">
     <noscript>
-        <link rel="stylesheet" type="text/css" href="/css/ns-base.css">
+        <link rel="stylesheet" type="text/css" href="/css/noscript.css">
     </noscript>
     <title>suisei</title>
 </head>
 <body>
 <header>
-    <div class="dl">
+    <div class="dl ns">
         <input type="checkbox" id="dls" onchange="switchmode()">
         <label for="dls">
             <img class="light-img" alt="dark mode" src="/img/light.svg">
@@ -30,52 +30,41 @@
     </div>
     <div class="hb">
         <ul>
-            <li><a href="/about-us.html">About us</a></li>
-            <li><a href="#project">Project</a></li>
+            <li><a href="/member.html">Member</a></li>
+            <li><a href="/project/">Project</a></li>
             <!--<li><a href="">Blog</a></li>-->
-            <li><a href="/support.html">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
         <div class="scroll">scroll<br>&#8595;</div>
     </div>
 </header>
-<main id="content">
+<main>
     <div id="news">
         <h2>News</h2>
         <div>
             <ul>
-                <li><a><span>2022/20/20</span><span class="kind">ウェブサイト</span><br class="cp"><span>ウェブサイト公開</span></a></li>
+                <li><a href="/news/2022-05-04-01.html"><span>2022/20/20</span><span class="kind">ウェブサイト</span><br class="cp"><span>ウェブサイト公開</span></a></li>
                 <li><a href="/news/">see more</a></li>
             </ul>
         </div>
     </div>
     <div id="project">
-        <h2>Project</h2>
+        <h2><a href="/project/">Project</a></h2>
         <div>
-        <a href="/about-us.html">
+        <a href="/project/this-website.html">
             <section>
-                <h3>This website</h3>
+                <h3>このウェブサイト</h3>
                 <p>このウェブサイト。プロジェクトの要素がないので入れました。</p>
-            </section>
-        </a>
-        <a>
-            <section>
-                <h3>This website</h3>
-                <p>このウェブサイト。なんかそれっぽい感じで作りました。</p>
             </section>
         </a>
         </div>
     </div>
-    <div id="sns-link">
-        <h2>SNS account</h2>
+    <div id="social-media">
+        <h2>Social media</h2>
         <section>
-            <a class="b out">Twitter</a>
-            <a class="b out">mastodon</a>
-        </section>
-    </div>
-    <div id="community">
-        <h2>Commnuity</h2>
-        <section>
-            <a class="b out">Discord</a>
+            <a href="https://twitter.com/info_suisei" class="b out">Twitter</a>
+            <a href="https://mastodon.social/web/@suisei" class="b out">mastodon</a>
+            <!--<a href="" class="b out">Discord</a>-->
         </section>
     </div>
 </main>
@@ -84,21 +73,13 @@
         <p class="cp to-top">
             <a href="#">&#8743; to top</a>
         </p>
-        <div class="foo">
+        <div class="foo foo-l">
             <ul>
                 <li><a href="/">ホーム</a></li>
-                <li><a href="/about-us.html">私たちについて</a></li>
+                <li><a href="/member.html">メンバー一覧</a></li>
                 <li><a href="/project/">プロジェクト</a></li>
-                <li><a href="/community.html">コミュニティ</a></li>
-                <li><a href="/support.html">サポート</a></li>
-            </ul>
-        </div>
-        <div class="foo">
-            <ul>
                 <li><a href="/news/">ニュース</a></li>
                 <li><a href="/license.html">ライセンス</a></li>
-                <li><a href="/sitemap.html">サイトマップ</a></li>
-                <li><a href="/system.html">システム概要</a></li>
                 <li><a href="/contact.html">お問い合わせ</a></li>
             </ul>
         </div>

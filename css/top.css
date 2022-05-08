@@ -41,6 +41,7 @@ header{
     align-items: center;
 }
 header .dl{
+    margin-right: 0;
     position: absolute;
     top: 3rem;
     right: 3rem;
@@ -70,6 +71,9 @@ header .scroll{
     text-align: center;
 }
 
+main{
+    min-height: auto;
+}
 
 #project > div{
     display: -webkit-flex;

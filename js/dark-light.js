@@ -1,10 +1,10 @@
 const html = document.getElementById('html');
 const dlcheck =document.getElementById('dls');
-console.log(sessionStorage.getItem("mode"))
-if (sessionStorage.getItem("mode") === "dark") {
+console.log('\u3053\u3093\u3061\u304f\u308f\ncoded by @furikake_aoi')
+if (sessionStorage.getItem("darkmode") === "on") {
     darkmode();
     dlcheck.checked = true;
-} else if (sessionStorage.getItem("mode") === "light") {
+} else if (sessionStorage.getItem("darkmode") === "off") {
     lightmode();
 }
 function switchmode() {
@@ -12,10 +12,10 @@ function switchmode() {
     console.log(dlcheck);
     var check = document.getElementById('dls').checked;
     if(check == true ){
-        sessionStorage.setItem("darkmode", "dark");
+        sessionStorage.setItem("darkmode", "on");
         darkmode();
     } else {
-        sessionStorage.setItem("darkmode", "light");
+        sessionStorage.setItem("darkmode", "off");
         lightmode();
     }
 };

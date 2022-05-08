@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="suiseiに所属するメンバーの一覧です。">
+    <meta name="description" content="ウェブサイト公開">
     <link rel="shortcut icon" href="/img/icon.png">
     <link rel="apple-touch-icon" href="/img/icon.png">
     <link rel="stylesheet" type="text/css" href="/css/base.css">
-    <link rel="stylesheet" type="text/css" href="/css/member.css">
+    <link rel="stylesheet" type="text/css" href="/css/news.css">
     <noscript>
         <link rel="stylesheet" type="text/css" href="/css/noscript.css">
     </noscript>
-    <title>suisei</title>
+    <title>ウェブサイト公開 - suisei</title>
 </head>
 <body>
 <header>
@@ -33,22 +33,20 @@
     </div>
 </header>
 <main>
-    <div id="member-list">
-        <h2>Menber list</h2>
-        <div>
-            <section class="one">
-                <h3>frikake</h3>
-                <div>
-                <img src="/img/icon/furikake.png">
-                <div>
-                    <p>#01</p>
-                    <ul>
-                        <li><a href="https://furikake.f5.si">HP</a></li>
-                    </ul>
-                </div>
-                </div>
-            </section>
-        </div>
+    <section class="kiji">
+        <h2>ウェブサイト公開</h2>
+        <p>2022/05/07</p>
+        <p>suiseiのウェブサイトが公開されました。
+        <br>公開にあたって以下のサービスを利用させていただいております。</p>
+        <ul>
+            <li><a href="https://ddns.kuku.lu/">DDNS Now 様</a></li>
+            <li><a href="https://github.io/">GitHub Pages 様</a></li>
+        </ul>
+        <p>suiseiを代表し、感謝申し上げます。</p>
+    </section>
+    <div class="news-menuber">
+            <div><a href="/news/">&lt;&lt; ニュース一覧へ</a></div>
+            <div class="ns"><span onclick="tweetnews()">tweet</span><span onclick="tootnews()">TOOT!</span></div>
     </div>
 </main>
 <footer>
@@ -81,6 +79,7 @@
         <p class="cp copyright">&copy; 2022 suisei</p>
     </div>
 </footer>
+<script type="text/javascript" src="/js/news-share.js"></script>
 <script type="text/javascript" src="/js/dark-light.js"></script>
 </body>
 </html>
