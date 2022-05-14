@@ -231,6 +231,36 @@ footer > div{
     background-color: #222;
 }
 
+.dark.hc body{
+    background-color: #000;
+    color: #fff;
+}
+.dark.hc body,.dark.hc div,.dark.hc nav,.dark.hc button,.dark.hc header,.dark.hc footer,.dark.hc p,.dark.hc span,.dark.hc h1,.dark.hc h2,.dark.hc h3,.dark.hc h4,.dark.hc h5,.dark.hc a,.dark.hc li,.dark.hc ul,.dark.hc table,.dark.hc th,.dark.hc td,.dark.hc tr{
+    color: #fff;
+}
+.dark.hc ::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.dark.hc ::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+.dark.hc ::-webkit-scrollbar-thumb:hover{
+    background-color: #fff;
+}
+.dark.hc ::-webkit-scrollbar-thumb:active{
+    background-color: #fff;
+}
+.dark.hc .b{
+    color: #fff;
+    background-color: #000;
+}
+.dark.hc .b:hover{
+    background-color: #000;
+}
+.dark.hc footer{
+    background-color: #000;
+}
+
 .dark .dark-img{
     display: inline-block;
 }

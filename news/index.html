@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/img/icon.png">
     <link rel="apple-touch-icon" href="/img/icon.png">
     <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/css/assist.css">
     <link rel="stylesheet" type="text/css" href="/css/news.css">
     <noscript>
         <link rel="stylesheet" type="text/css" href="/css/noscript.css">
@@ -15,6 +16,22 @@
     <title>ウェブサイト公開 - suisei</title>
 </head>
 <body>
+<div id="assist">
+    <section>
+        <div id="https">
+            <p>暗号化されていない通信が検出されました。httpsを使用した閲覧をお勧めします。</p>
+            <a onclick="tohttps()">httpsを使用</a><a onclick="notthankyou()">拒否</a>
+        </div>
+        <div id="user">
+            <h2>ユーザー補助機能</h2>
+            <h3>フォントサイズ</h3>
+            <div><a class="fss" onclick="fss()">あ</a><a class="fsm" onclick="fsm()">あ</a><a class="fsl" onclick="fsl()">あ</a></div>
+            <h3>文字色と背景色</h3>
+            <div><a class="dc" onclick="dc()">デフォルト</a><a class="hc" onclick="hc()">ハイコントラスト</a></div>
+        </div>
+        <a id="" onclick="asf()">閉じる</a>
+    </section>
+</div>
 <header>
     <div>
         <div class="logo">
@@ -74,6 +91,7 @@
     </div>
 </footer>
 <script type="text/javascript" src="/js/news-share.js"></script>
+<script type="text/javascript" src="/js/assist.js"></script>
 <script type="text/javascript" src="/js/dark-light.js"></script>
 </body>
 </html>

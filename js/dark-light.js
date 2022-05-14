@@ -1,4 +1,3 @@
-const html = document.getElementById('html');
 const dlcheck =document.getElementById('dls');
 console.log('\u3053\u3093\u3061\u304f\u308f\ncoded by @furikake_aoi')
 if (sessionStorage.getItem("darkmode") === "on") {
