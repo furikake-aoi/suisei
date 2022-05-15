@@ -3,7 +3,8 @@
 }
 
 #assist{
-    position: absolute;
+    display: block;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     z-index: 10000;
@@ -21,23 +22,30 @@
     background-color: #fff;
 }
 #assist > section > div{
-    margin-bottom: 14px;
+    margin-bottom: 2rem;
 }
 #assist a{
     display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 40px;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
     padding: 7px;
     border: none;
     background-color: #000;
     color: #fff;
 }
+#https{
+    background-color: #f005;
+    padding:1rem;
+}
+#https a{
+    margin-bottom: 0;
+}
 
 .fss:root,.fss{
-    font-size: 8px;
+    font-size: 14px;
 }
 .fsm:root,.fsm{
-    font-size: 14px;
+    font-size: 17px;
 }
 .fsl:root,.fsl{
     font-size: 20px;

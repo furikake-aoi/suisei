@@ -1,5 +1,6 @@
 const dlcheck =document.getElementById('dls');
 console.log('\u3053\u3093\u3061\u304f\u308f\ncoded by @furikake_aoi')
+console.log('last update 2022/05/15')
 if (sessionStorage.getItem("darkmode") === "on") {
     darkmode();
     dlcheck.checked = true;

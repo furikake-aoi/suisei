@@ -24,7 +24,7 @@ header ul{
 header li{
     margin-left: 0;
 }
-header .dl img{
+header .h-d img{
     position: relative;
     transform: none;
     top: 0;
@@ -40,15 +40,20 @@ header{
     justify-content: center;
     align-items: center;
 }
-header .dl{
+header .h-b{
+    display: flex;
     margin-right: 0;
     position: absolute;
-    top: 3rem;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
 }
-header .dl img{
+header .h-b img{
+    position: relative;
     height: 2rem;
     width: 2rem;
+}
+header .dl{
+    margin-right: 0;
 }
 header .logo img{
     max-width: 80vw;

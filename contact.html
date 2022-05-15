@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" id="html" class="light">
+<html lang="ja" id="html" class="light dc fss">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +8,29 @@
     <link rel="shortcut icon" href="/img/icon.png">
     <link rel="apple-touch-icon" href="/img/icon.png">
     <link rel="stylesheet" type="text/css" href="/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/css/assist.css">
     <noscript>
         <link rel="stylesheet" type="text/css" href="/css/noscript.css">
     </noscript>
     <title>contact - suisei</title>
 </head>
 <body>
+<div id="assist" class="ns none">
+    <section>
+        <div id="https" class="none">
+            <p>暗号化されていない通信が検出されました。httpsを使用した閲覧をお勧めします。</p>
+            <a onclick="tohttps()">httpsを使用</a><a onclick="nothttps()">拒否</a>
+        </div>
+        <div id="user">
+            <h2>ユーザー補助機能</h2>
+            <h3>フォントサイズ</h3>
+            <div><a class="fss" onclick="fss()">あ</a><a class="fsm" onclick="fsm()">あ</a><a class="fsl" onclick="fsl()">あ</a></div>
+            <h3>文字色と背景色</h3>
+            <div><a class="dc" onclick="dc()">デフォルト</a><a class="hc" onclick="hc()">ハイコントラスト</a></div>
+        </div>
+        <a id="" onclick="asf()">閉じる</a>
+    </section>
+</div>
 <header>
     <div>
         <div class="logo">
@@ -27,20 +44,33 @@
             <li><a href="/project/">Project</a></li>
             <!--<li><a href="">Blog</a></li>-->
             <li><a href="/contact.html">Contact</a></li>
-            <li class="ns"><div class="dl"><input type="checkbox" id="dls" onchange="switchmode()"><label for="dls"><img class="light-img" alt="dark mode" src="/img/light.svg"><img class="dark-img" alt="light mode" src="/img/dark.svg"></label></div></li>
+                        <li class="ns">
+                <div class="assist-i">
+                    <img class="light-img" onclick="viewassist()" alt="suisei logo" src="/img/assist.svg">
+                    <img class="dark-img" onclick="viewassist()" alt="suisei logo" src="/img/assist-d.svg">
+                </div>
+            </li>
+            <li class="ns">
+                <div class="dl">
+                    <input type="checkbox" id="dls" onchange="switchmode()"><label for="dls"><img class="light-img" alt="dark mode" src="/img/light.svg"><img class="dark-img" alt="light mode" src="/img/dark.svg"></label>
+                </div>
+            </li>
         </ul>
     </div>
 </header>
 <main>
     <div id="contact">
         <h2>contact</h2>
-        <p>お問い合わせは、以下のいずれかよりお願いします。回答にお時間をいただく恐れがあります。また、「Discord」「Mention on Twitter」「Mention on mastodon」でお問い合わせをいただいた内容は仕様上公開されます。ご了承ください。</p>
+        <p>公式対応の準備中です。対応の準備が整うまで代表Twitterで受け付けます。「Mention on Twitter」でお問い合わせをいただいた内容は仕様上公開される場合があります。</p>
+        <a class="b out" href="https://twitter.com/intent/tweet?text=@furikake_aoi\n">Mention on Twitter</a>
+        <a class="b out" href="https://twitter.com/messages/compose?recipient_id=1448974788832100356">DM on Twitter</a>
+        <!--<p>お問い合わせは、以下のいずれかよりお願いします。回答にお時間をいただく恐れがあります。また、「Discord」「Mention on Twitter」「Mention on mastodon」でお問い合わせをいただいた内容は仕様上公開されます。ご了承ください。</p>
         <a class="b out">Google form</a>
         <a class="b out">Discord</a>
         <a class="b out">Mention on Twitter</a>
         <a class="b out">Mention on mastodon</a>
         <a class="b out">DM on Twitter</a>
-        <a class="b out">DM on mastodon</a>
+        <a class="b out">DM on mastodon</a>-->
     </div>
 </main>
 <footer>
@@ -73,6 +103,7 @@
         <p class="cp copyright">&copy; 2022 suisei</p>
     </div>
 </footer>
+<script type="text/javascript" src="/js/assist.js"></script>
 <script type="text/javascript" src="/js/dark-light.js"></script>
 </body>
 </html>

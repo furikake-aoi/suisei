@@ -11,3 +11,11 @@
 
 0 1 2 3 4 5 6 7 8 9 a b c d e f
 f e d c b a 9 8 7 6 5 4 3 2 1 0
+
+    <meta data-n-head="ssr" property="og:url" content="https://suisei.f5.si/news/2022-05-15-01.html">
+    <meta data-n-head="ssr" property="og:title" content="ユーザー補助機能追加 - suisei">
+    <meta data-n-head="ssr" property="og:type" content="website">
+    <meta data-n-head="ssr" property="og:description" content="当ウェブサイトにユーザ補助機能が追加されました！">
+    <meta data-n-head="ssr" property="og:image" content="https://ablaze.one/img/ogp/news/2022-05-15-01.png">
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" name="twitter:site" content="@info_suisei">

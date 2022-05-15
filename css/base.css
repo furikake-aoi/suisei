@@ -115,11 +115,11 @@ main > div{
     transform: translateY(-50%);
     content: "\02192";
 }
-
+/* darkmode button */
 #dls{
     display: none;
 }
-
+/* header */
 header{
     display: -webkit-flex;
     display: flex;
@@ -148,17 +148,17 @@ header ul{
 header li{
     margin-left: 1rem;
 }
-header .dl{
+header .dl,header .assist-i{
     margin-right: 1rem;
 }
-header .dl img{
+header .dl img,header .assist-i img{
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
     height: 1rem;
     width: 1rem;
 }
-
+/* footer */
 footer{
     margin-top: 3rem;
     padding-top: 2rem;
@@ -201,7 +201,7 @@ footer > div{
     margin-top: 1rem;
 }
 
-
+/* dark mode default contrast */
 .dark body{
     background-color: #111;
     color: #eee;
@@ -231,6 +231,7 @@ footer > div{
     background-color: #222;
 }
 
+/* dark mode high contrast */
 .dark.hc body{
     background-color: #000;
     color: #fff;
@@ -239,7 +240,7 @@ footer > div{
     color: #fff;
 }
 .dark.hc ::-webkit-scrollbar-track {
-    background-color: #fff;
+    background-color: #000;
 }
 .dark.hc ::-webkit-scrollbar-thumb {
     background-color: #fff;
@@ -251,14 +252,45 @@ footer > div{
     background-color: #fff;
 }
 .dark.hc .b{
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
 }
 .dark.hc .b:hover{
     background-color: #000;
 }
 .dark.hc footer{
     background-color: #000;
+}
+
+/* light mode high contrast */
+.light.hc body{
+    background-color: #fff;
+    color: #000;
+}
+.light.hc body,.light.hc div,.light.hc nav,.light.hc button,.light.hc header,.light.hc footer,.light.hc p,.light.hc span,.light.hc h1,.light.hc h2,.light.hc h3,.light.hc h4,.light.hc h5,.light.hc a,.light.hc li,.light.hc ul,.light.hc table,.light.hc th,.light.hc td,.light.hc tr{
+    color: #000;
+}
+.light.hc ::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.light.hc ::-webkit-scrollbar-thumb {
+    background-color: #000;
+}
+.light.hc ::-webkit-scrollbar-thumb:hover{
+    background-color: #000;
+}
+.light.hc ::-webkit-scrollbar-thumb:active{
+    background-color: #000;
+}
+.light.hc .b{
+    background-color: #000;
+    color: #fff;
+}
+.light.hc .b:hover{
+    background-color: #000;
+}
+.light.hc footer{
+    background-color: #fff;
 }
 
 .dark .dark-img{
