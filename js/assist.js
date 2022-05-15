@@ -3,7 +3,6 @@ const html = document.getElementById('html');
 const https = document.getElementById('https');
 const protocol = location.protocol;
 assist.classList.remove("none");
-console.log(sessionStorage.getItem("assist-setting"));
 if (sessionStorage.getItem("assist-setting") == "ok"){
     assist.classList.add("none");
 }
