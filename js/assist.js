@@ -1,14 +1,5 @@
 const assist = document.getElementById('assist');
 const html = document.getElementById('html');
-const https = document.getElementById('https');
-const protocol = location.protocol;
-assist.classList.remove("none");
-if (sessionStorage.getItem("assist-setting") == "ok"){
-    assist.classList.add("none");
-}
-if (protocol != "https:" && sessionStorage.getItem("protcol") != "ok"){
-    https.classList.add("none");
-}
 const fontsize = sessionStorage.getItem("fontsize");
 const contrast = sessionStorage.getItem("contrast");
 if (fontsize != null){
@@ -22,18 +13,9 @@ html.classList.add(contrast);
 function viewassist(){
     assist.classList.remove("none");
 }
-function tohttps(){
-    const nurl = location.href;
-    const tourl = nurl.slice(0,4) + "s" + nurl.slice(4);
-    window.location = tourl;
-}
-function nothttps(){
-    https.classList.add("none");
-}
 
 function asf(){
     assist.classList.add("none");
-    sessionStorage.setItem("assist-setting","ok");
 }
 
 function fss(){

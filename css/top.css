@@ -105,6 +105,9 @@ main{
 }
 
 @media screen and (max-width:480px){
+    header{
+        position: relative;
+    }
     #project > div{
         display: block;
     }

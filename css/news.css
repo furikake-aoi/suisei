@@ -20,6 +20,13 @@
     margin-bottom: 1rem;
     color: #aaa;
 }
+.kiji h2 + p img{
+    height: 1rem;
+    display: inline-block;
+}
+.kiji h2 + p span{
+margin-right: 0.7rem;
+}
 .news-menuber{
     display: -webkit-flex;
     display: flex;
