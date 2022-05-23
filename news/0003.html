@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja" id="html" class="light dc fss">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="密かについていたhttps:の利用を促す表示がなくなりました。">
+<link rel="shortcut icon" href="/img/icon.png">
+<link rel="apple-touch-icon" href="/img/icon.png">
+<link rel="stylesheet" type="text/css" href="/css/base.css">
+<link rel="stylesheet" type="text/css" href="/css/assist.css">
+<link rel="stylesheet" type="text/css" href="/css/news.css">
+
+<title>密かについていたhttpsの利用を促す表示がなくなりました。 - suisei</title>
+</head>
+<body>
+<div id="assist" class="ns none">
+<section>
+<div id="user">
+<h2>ユーザー補助機能</h2>
+<h3>フォントサイズ</h3>
+<div><a class="fss" onclick="fss()">あ</a><a class="fsm" onclick="fsm()">あ</a><a class="fsl" onclick="fsl()">あ</a></div>
+<h3>文字色と背景色</h3>
+<div><a class="dc" onclick="dc()">デフォルト</a><a class="hc" onclick="hc()">ハイコントラスト</a></div>
+</div>
+<a id="" onclick="asf()">閉じる</a>
+</section>
+</div>
+<header id="header" class="close">
+<div>
+<div>
+<div class="logo">
+<a href="/">
+<img class="light-img" alt="suisei logo" src="/img/logo.svg">
+<img class="dark-img" alt="suisei logo" src="/img/logo-d.svg">
+</a>
+</div>
+<div class="h-menu cp close">
+<img id="c-l" class="light-img" src="/img/close-light.svg" onclick="openmenu()">
+<img id="c-d" class="dark-img" src="/img/close-dark.svg" onclick="openmenu()">
+<img id="o-l" class="light-img none" src="/img/open-light.svg" onclick="closemenu()">
+<img id="o-d" class="dark-img none" src="/img/open-dark.svg" onclick="closemenu()">
+</div>
+</a>
+</div>
+<ul>
+<li><a href="/member.html">Member</a></li>
+<li><a href="/project/">Project</a></li>
+<!--<li><a href="">Blog</a></li>-->
+<li><a href="/contact.html">Contact</a></li>
+<li class="ns">
+<div class="assist-i">
+<img class="light-img" onclick="viewassist()" alt="suisei logo" src="/img/assist.svg">
+<img class="dark-img" onclick="viewassist()" alt="suisei logo" src="/img/assist-d.svg">
+</div>
+</li>
+<li class="ns">
+<div class="dl">
+<input type="checkbox" id="dls" onchange="switchmode()"><label for="dls"><img class="light-img" alt="dark mode" src="/img/light.svg"><img class="dark-img" alt="light mode" src="/img/dark.svg"></label>
+</div>
+</li>
+</ul>
+</div>
+</header>
+
+<main>
+<section class="kiji">
+<h2>密かについていたhttpsの利用を促す表示がなくなりました。</h2>
+<p>
+<span><img class="light-img" src="/img/add.svg" alt="add:"><img class="dark-img" src="/img/add-d.svg" alt="add:">2022/05/23</span>
+</p>
+<p>先日の記事 <a class="u">「ユーザー補助機能が追加されました！」</a> （加筆・修正済み）にて、カッコ書きでhttps以外で通信している方にhttpsの利用を促す表示をするとお知らせしましたが、それをなくしました。<p>
+<h3>なぜ？</h3>
+<p>いくつかの環境でテストしましたが、いずれもhttpでアクセスしようとすると自動でhttpsにリダイレクトしたためです。<p>
+<br>
+<p>小さな変更もこうしてお知らせしていくつもりです。今後ともよろしくお願いいたします。</p>
+</section>
+<div class="news-menuber">
+<div><a href="/news/">&lt;&lt; ニュース一覧へ</a></div>
+<div class="ns"><span onclick="tweetnews()">tweet</span><span onclick="tootnews()">TOOT!</span></div>
+</div>
+</main>
+<footer>
+<div>
+<p class="cp to-top">
+<a href="#">&#8743; to top</a>
+</p>
+<div class="foo foo-l">
+<ul>
+<li><a href="/">ホーム</a></li>
+<li><a href="/member.html">メンバー一覧</a></li>
+<li><a href="/project/">プロジェクト</a></li>
+<li><a href="/news/">ニュース</a></li>
+<li><a href="/license.html">ライセンス</a></li>
+<li><a href="/contact.html">お問い合わせ</a></li>
+</ul>
+</div>
+<div class="pc foo foo-r">
+<div>
+<p>
+<a href="#">&#8743; to top</a>
+</p>
+<a href="/">
+<img class="light-img" alt="suisei logo" src="/img/logo.svg">
+<img class="dark-img" alt="suisei logo" src="/img/logo-d.svg">
+</a>
+<p class="copyright">&copy; 2022 suisei</p>
+</div>
+</div>
+<p class="cp copyright">&copy; 2022 suisei</p>
+</div>
+</footer>
+<script type="text/javascript" src="/js/news-share.js"></script>
+<script type="text/javascript" src="/js/open-close.js"></script>
+<script type="text/javascript" src="/js/assist.js"></script>
+<script type="text/javascript" src="/js/dark-light.js"></script>
+</body>
+<noscript>
+<link rel="stylesheet" type="text/css" href="/css/noscript.css">
+</noscript>
+</html>
