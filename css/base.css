@@ -386,8 +386,13 @@ footer > div{
     footer > div{
         display: block;
     }
-
     .dark header{
         background-color: #111;
+    }
+    .hc .light header{
+        background-color: #000;
+    }
+    .hc .dark header{
+        background-color: #fff;
     }
 }

@@ -15,14 +15,37 @@
     width: 7rem;
     text-align: center;
 }
+.kiji > div:first-of-type{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 315px;
+}
+.kiji > div:first-of-type img{
+    opacity: 0.5;
+    margin-top: -157.5px;
+    width: 100%;
+    transition: all 0.3s 0.5s;
+}
+.kiji > div:first-of-type:hover img{
+    opacity: 1;
+    margin-top: 0;
+    width: 600px;
+}
+.kiji h3{
+    margin-top: 1.25rem;
+    font-size: 1.25rem;
+}
+.kiji h3 + p{
+    font-size: 1rem;
+    font-style: normal;
+}
 .kiji h2 + p{
     margin-top: -1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #aaa;
-}
-.kiji h2 + p img{
-    height: 1rem;
-    display: inline-block;
 }
 .kiji h2 + p span{
 margin-right: 0.7rem;
@@ -39,6 +62,30 @@ margin-right: 0.7rem;
 .news-menuber div:last-child > span:last-child{
     margin-left: 1rem;
 }
+.kiji span.add::before {
+    content: "";
+    background-color: #111;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    -webkit-mask: url("/img/add.svg");
+    mask: url("/img/add.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    vertical-align: middle;
+}
+.kiji span.up::before {
+    content: "";
+    background-color: #111;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    -webkit-mask: url("/img/up.svg");
+    mask: url("/img/up.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    vertical-align: middle;
+}
 
 .dark #news li{
     border-bottom: 1px solid #555;
@@ -46,16 +93,68 @@ margin-right: 0.7rem;
 .dark #news li span{
     color: #eee;
 }
+.dark .kiji span.add::before {
+    content: "";
+    background-color: #eee;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    -webkit-mask: url("/img/add.svg");
+    mask: url("/img/add.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    vertical-align: middle;
+}
+.dark .kiji span.up::before {
+    content: "";
+    background-color: #eee;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    -webkit-mask: url("/img/up.svg");
+    mask: url("/img/up.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    vertical-align: middle;
+}
 
+@media screen and (max-width:1200px){
+    .kiji > div:first-of-type{
+        height: auto;
+    }
+    .kiji > div:first-of-type img{
+        margin-top: 0;
+        width: 600px;
+        transition: none;
+    }
+    .kiji > div:first-of-type:hover img{
+        margin-top: 0;
+        width: 600px;
+    }
+}
+@media screen and (max-width:580px){
+    .kiji > div:first-of-type img{
+        width: 480px;
+    }
+    .kiji > div:first-of-type:hover img{
+        width: 480px;
+    }
+}
 @media screen and (max-width:480px){
     #news li span{
-        color: #aaa;
+        color: #ccc;
     }
     #news li span:last-child{
         color: #111;
     }
+    .kiji > div:first-of-type img{
+        width: 100%;
+    }
+    .kiji > div:first-of-type:hover img{
+        width: 100%;
+    }
     .dark #news li span{
-        color: #555;
+        color: #444;
     }
     .dark #news li span:last-child{
         color: #eee;
