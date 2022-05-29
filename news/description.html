@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>description</title>
+</head>
+<body>
+<div>
+    <a href="/news/" id="length" style="font-size: 32px;">0</a>
+</div>
+<div style="display: flex;">
+    <input id="before" name="before" type="text" onchange="change()">
+    <input id="after" name="after" type="text">
+</div>
+<style>
+    div{
+        text-align: center;
+        width: 100%;
+    }
+    input{
+        border: 1px #000 solid;
+        width: 49%;
+        height: 500px;
+    }
+    input:first-child{
+        margin-right: 2%;
+    }
+</style>
+<script>
+function change(){
+    var before = document.getElementById('before').value;
+    document.getElementById('length').innerHTML = before.length;
+    const after = before.substr( 0,100 );
+    document.getElementById('after').value = after + "...";
+}
+</script>
+</body>
+</html>
